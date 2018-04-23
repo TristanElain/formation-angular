@@ -57,3 +57,16 @@ typings/
 # dotenv environment variables file
 .env
 
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.settings/
+*.swo
+modules/.settings
+.bazelrc
+.vscode
+modules/.vscode
+
+# build-analytics
+.build-analytics
