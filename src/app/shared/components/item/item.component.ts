@@ -16,4 +16,9 @@ export class ItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  changeState(state: State) {
+    this.item.state = state;
+    // Update de la collection par le service
+  }
 }
