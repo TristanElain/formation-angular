@@ -19,9 +19,9 @@ export class CollectionService {
     this._collection = col;
   }
 
-  getItem = () => {};
+  getItem = (id: string) => {};
 
-  updateItem = () => {};
+  updateItem = (item: Item) => {};
 
-  deleteItem = () => {};
+  deleteItem = (item: Item) => {};
 }
