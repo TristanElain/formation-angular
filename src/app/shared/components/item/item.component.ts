@@ -2,6 +2,8 @@ import {Component, Input, OnInit} from '@angular/core';
 
 import {Item} from '../../models/item';
 
+import {State} from './../../enums/state.enum';
+
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
@@ -9,6 +11,7 @@ import {Item} from '../../models/item';
 })
 export class ItemComponent implements OnInit {
   @Input() item: Item;
+  state = State;
 
   constructor() {}
 

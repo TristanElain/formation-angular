@@ -1,6 +1,12 @@
 <div class="card">
   <div class="card-header">
-    {{item.state}}
+    <!-- <span [ngClass]="{'state-alivrer': state.ALIVRER === item.state, 'state-encours': state.ENCOURS === item.state, 'state-livre':
+    state.LIVRE === item.state}">
+      {{item.state}}
+    </span> -->
+    <span [appState]="item.state">
+      {{item.state}}
+    </span>
   </div>
   <div class="card-body">
     <h5 class="card-title">{{item.name}}</h5>
